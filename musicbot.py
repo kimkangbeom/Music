@@ -696,12 +696,12 @@ class Music(commands.Cog):
 				)
 		await ctx.send( embed=embed, tts=False)
 	################ 음성파일 생성 후 재생 ################ 			
-	@commands.command(name="!인중")
+	@commands.command(name="!꿀밤")
 	async def playText_(self, ctx):
 		#msg = ctx.message.content[len(ctx.invoked_with)+1:]
 		#sayMessage = msg
-		await MakeSound('뮤직봇이 마이 아파요. 잠시 후 사용해주세요.', './say' + str(ctx.guild.id))
-		await ctx.send("```뮤직봇이 마이 아파요. 잠시 후 사용해주세요.```", tts=False)
+		await MakeSound('봇 한대 맞았어요.', './say' + str(ctx.guild.id))
+		await ctx.send("```임시리붓 중. 프로길드 화이팅!.```", tts=False)
 		
 		if not ctx.voice_state.voice:
 			await ctx.invoke(self._summon)
